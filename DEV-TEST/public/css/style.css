@@ -35,7 +35,7 @@
     padding: 12px 6px;
     border-radius: 20px;
     gap: 15px;
-    
+
 }
 
 .nav-links li a {
@@ -52,8 +52,8 @@
     color: white;
 }
 
-.cart{
-    button{
+.cart {
+    button {
         background-color: #4285F4;
         color: white;
         padding: 10px 20px;
@@ -71,7 +71,7 @@
     color: #4285F4;
 }
 
-.btn-filter-mb{
+.btn-filter-mb {
     display: none;
 }
 
@@ -105,12 +105,14 @@
     .hamburger {
         display: block;
     }
-    .card-search{
+
+    .card-search {
         display: none;
     }
-    .btn-filter-mb{
+
+    .btn-filter-mb {
         display: block;
-   
+
     }
 }
 
@@ -193,10 +195,51 @@ footer {
     }
 }
 
+.sale img {
+    position: absolute;
+    /* Sale */
+    width: 101px;
+    height: 44px;
+    left: 0px;
+}
+
 .carousel-item img {
-    max-height: 300px;
+    max-height: 281px;
     object-fit: contain;
 }
+
+.controls-btn {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.controls-btn button {
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #469B4C;
+}
+
+.imageslide {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.imageslide img {
+    width: 68px;
+    height: 46px;
+    padding: 6px;
+    border-radius: 4px;
+}
+
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -211,6 +254,8 @@ footer {
         background-color: #4285F4;
     }
 }
+
+
 
 /* Container to enable horizontal scrolling */
 .card-container {

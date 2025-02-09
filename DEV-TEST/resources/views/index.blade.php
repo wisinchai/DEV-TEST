@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-lg-11 col-md-9">
+            <div class="col-lg-11 col-md-11">
                 <div class="card card-search" style="background-color: #F4F8FF;border:none;">
                     <div class="card-body text-center">
                         <h6><b>ค้นหาผลิตภัณท์</b></h6>
@@ -34,7 +34,8 @@
                                         <div class="input-group">
                                             <span class="input-group-text" id=""><i class="fa fa-filter"
                                                     style="color:#4285F4"></i></span>
-                                            <select name="" id="" class="form-select form-select-lg" disabled>
+                                            <select name="" id="" class="form-select form-select-lg"
+                                                disabled>
                                                 <option value="">เลือกผลิตภัณท์</option>
                                             </select>
                                         </div>
@@ -68,7 +69,7 @@
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
-                           
+
                             <div class="modal-body">
                                 <div class="row mt-3">
                                     <div class="col-12">
@@ -87,7 +88,8 @@
                                         <div class="input-group">
                                             <span class="input-group-text" id=""><i class="fa fa-filter"
                                                     style="color:#4285F4"></i></span>
-                                            <select name="" id="" class="form-select form-select-lg" disabled>
+                                            <select name="" id="" class="form-select form-select-lg"
+                                                disabled>
                                                 <option value="">เลือกผลิตภัณท์</option>
                                             </select>
                                         </div>
@@ -108,7 +110,7 @@
                                 </div>
 
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -132,30 +134,59 @@
                     <div class="row">
                         <div class="col-lg-6 col-sm-12">
                             <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="sale">
+                                    <img src="{{ asset('image\product\sale.png') }}" alt="">
+                                </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="https://cdn.wallpapersafari.com/81/92/qs7Pof.jpg" class="d-block w-100"
-                                            alt="Product 1">
+                                        <img src="{{ asset('image\product\WorkLouder1.png') }}" class="d-block w-100">
 
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="https://i.pinimg.com/originals/c4/26/82/c4268244c25de664fae2b19d5ad1611b.jpg"
-                                            class="d-block w-100" alt="Product 2">
+                                        <img src="{{ asset('image\product\WorkLouder2.png') }}"
+                                            class="d-block w-100">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="http://www.joshbenson.com/wp-content/uploads/2013/11/change-wallpapers-for-free-720x340.jpg"
-                                            class="d-block w-100" alt="Product 3">
+                                        <img src="{{ asset('image\product\WorkLouder3.png') }}"
+                                            class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{ asset('image\product\WorkLouder4.png') }}"
+                                            class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{ asset('image\product\WorkLouder5.png') }}"
+                                            class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{ asset('image\product\WorkLouder6.png') }}"
+                                            class="d-block w-100">
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"
-                                        style='font-size:48px;color:red'></span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="controls-btn">
+                                    <button onclick="prevSlide()">❮</button>
+                                    <button onclick="nextSlide()">❯</button>
+                                    {{-- <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#productCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"
+                                            style='font-size:48px;color:red'></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#productCarousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </button> --}}
+                                </div>
+
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="imageslide">
+                                    <img src="{{ asset('image\product\WorkLouder1.png') }}">
+                                    <img src="{{ asset('image\product\WorkLouder2.png') }}">
+                                    <img src="{{ asset('image\product\WorkLouder3.png') }}">
+                                    <img src="{{ asset('image\product\WorkLouder4.png') }}">
+                                    <img src="{{ asset('image\product\WorkLouder5.png') }}">
+                                    <img src="{{ asset('image\product\WorkLouder6.png') }}">
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-12">
@@ -193,7 +224,7 @@
 
                                 <div class="card-container">
                                     <div class="card-pdt">
-                                        <img src="https://cdn.wallpapersafari.com/81/92/qs7Pof.jpg" class="card-img-top"
+                                        <img src="{{ asset('image\product\FigmaCreatorMicro.png') }}" class="card-img-top"
                                             alt="...">
                                         <div class="card-pdt-body">
                                             <h5 class="card-pdt-title mt-1" id="pdt-name">Figma Creator Micro</h5>
@@ -203,7 +234,7 @@
                                         </div>
                                     </div>
                                     <div class="card-pdt">
-                                        <img src="https://cdn.wallpapersafari.com/81/92/qs7Pof.jpg" class="card-img-top"
+                                        <img src="{{ asset('image\product\Knob1.png') }}" class="card-img-top"
                                             alt="...">
                                         <div class="card-pdt-body">
                                             <h5 class="card-pdt-title mt-1" id="pdt-name">Knob1</h5>
@@ -213,7 +244,7 @@
                                         </div>
                                     </div>
                                     <div class="card-pdt">
-                                        <img src="https://cdn.wallpapersafari.com/81/92/qs7Pof.jpg" class="card-img-top"
+                                        <img src="{{ asset('image\product\CreatorBoard.png') }}" class="card-img-top"
                                             alt="...">
                                         <div class="card-pdt-body">
                                             <h5 class="card-pdt-title mt-1" id="pdt-name">Creator Board</h5>
@@ -223,7 +254,7 @@
                                         </div>
                                     </div>
                                     <div class="card-pdt">
-                                        <img src="https://cdn.wallpapersafari.com/81/92/qs7Pof.jpg" class="card-img-top"
+                                        <img src="{{ asset('image\product\CreatorBoardXL.png') }}" class="card-img-top"
                                             alt="...">
                                         <div class="card-pdt-body">
                                             <h5 class="card-pdt-title mt-1" id="pdt-name">Creator Board XL</h5>
@@ -255,8 +286,8 @@
                             <div class="col-12" style="display: flex;justify-content: space-between;">
                                 <div class="card-container">
                                     <div class="card-pdt">
-                                        <img src="https://cdn.wallpapersafari.com/81/92/qs7Pof.jpg" class="card-img-top"
-                                            alt="...">
+                                        <img src="{{ asset('image\product\RAZERProTypeUltra.png') }}"
+                                            class="card-img-top" alt="...">
                                         <div class="card-pdt-body">
                                             <h5 class="card-pdt-title mt-1" id="pdt-name">RAZER Pro Type Ultra</h5>
                                             <p class="" id="pdt-type">Mechanical Keyboard</p>
@@ -265,7 +296,7 @@
                                         </div>
                                     </div>
                                     <div class="card-pdt">
-                                        <img src="https://cdn.wallpapersafari.com/81/92/qs7Pof.jpg" class="card-img-top"
+                                        <img src="{{ asset('image\product\DiavaletPhantom2.png') }}" class="card-img-top"
                                             alt="...">
                                         <div class="card-pdt-body">
                                             <h5 class="card-pdt-title mt-1" id="pdt-name">Diavalet Phantom 2</h5>
@@ -275,8 +306,8 @@
                                         </div>
                                     </div>
                                     <div class="card-pdt">
-                                        <img src="https://cdn.wallpapersafari.com/81/92/qs7Pof.jpg" class="card-img-top"
-                                            alt="...">
+                                        <img src="{{ asset('image\product\BoseQuietComfortUltra.png') }}"
+                                            class="card-img-top" alt="...">
                                         <div class="card-pdt-body">
                                             <div class="card-pdt-title mt-1" id="pdt-name">Bose QuietComfort Ultra</div>
                                             <p class="" id="pdt-type">Headphone</p>
@@ -285,7 +316,7 @@
                                         </div>
                                     </div>
                                     <div class="card-pdt">
-                                        <img src="https://cdn.wallpapersafari.com/81/92/qs7Pof.jpg" class="card-img-top"
+                                        <img src="{{ asset('image\product\LewittPureTube.png') }}" class="card-img-top"
                                             alt="...">
                                         <div class="card-pdt-body">
                                             <h5 class="card-pdt-title mt-1" id="pdt-name">Lewitt Pure Tube</h5>
