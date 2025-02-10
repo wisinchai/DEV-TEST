@@ -2,6 +2,9 @@
 
 @section('header')
     <title>index</title>
+    <style>
+
+    </style>
 @endsection
 
 @section('content')
@@ -133,48 +136,27 @@
                 <div class="content">
                     <div class="row">
                         <div class="col-lg-6 col-sm-12">
-                            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
-                                <div class="sale">
-                                    <img src="{{ asset('image\product\sale.png') }}" alt="">
-                                </div>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="{{ asset('image\product\WorkLouder1.png') }}" class="d-block w-100">
+                            <div class="container-carousel">
+                                <div id="productCarousel" class="carousel" data-bs-ride="carousel">
+                                    <div class="sale-banner">
+                                        <img src="{{ asset('image\product\sale.png') }}" alt="" class="sale-banner">
                                     </div>
-                                    <div class="carousel-item">
-                                        <img src="{{ asset('image\product\WorkLouder2.png') }}" class="d-block w-100">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="{{ asset('image\product\WorkLouder3.png') }}" class="d-block w-100">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="{{ asset('image\product\WorkLouder4.png') }}" class="d-block w-100">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="{{ asset('image\product\WorkLouder5.png') }}" class="d-block w-100">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="{{ asset('image\product\WorkLouder6.png') }}" class="d-block w-100">
-                                    </div>
-                                </div>
-                                <div class="controls-btn">
-                                    <button onclick="prevSlide()">❮</button>
-                                    <button onclick="nextSlide()">❯</button>
-                                    {{-- <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#productCarousel" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"
-                                            style='font-size:48px;color:red'></span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#productCarousel" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    </button> --}}
-                                </div>
+                                    <img src="{{ asset('image\product\WorkLouder1.png') }}" class="active">
+                                    <img src="{{ asset('image\product\WorkLouder2.png') }}">
+                                    <img src="{{ asset('image\product\WorkLouder3.png') }}">
+                                    <img src="{{ asset('image\product\WorkLouder4.png') }}">
+                                    <img src="{{ asset('image\product\WorkLouder5.png') }}">
+                                    <img src="{{ asset('image\product\WorkLouder6.png') }}">
+                                    <div class="controls-btn">
+                                        <button type="button" onclick="prevSlide()">❮</button>
+                                        <button type="button" onclick="nextSlide()">❯</button>
 
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="">
                                 <div class="imageslide">
-                                    <img src="{{ asset('image\product\WorkLouder1.png') }}">
+                                    <img src="{{ asset('image\product\WorkLouder1.png') }}" class="active">
                                     <img src="{{ asset('image\product\WorkLouder2.png') }}">
                                     <img src="{{ asset('image\product\WorkLouder3.png') }}">
                                     <img src="{{ asset('image\product\WorkLouder4.png') }}">
@@ -182,7 +164,10 @@
                                     <img src="{{ asset('image\product\WorkLouder6.png') }}">
                                 </div>
                             </div>
+
+
                         </div>
+
                         <div class="col-lg-6 col-sm-12">
                             <b> Nomad [E] </b>
                             <p>
@@ -211,57 +196,58 @@
                         </div>
                     </div>
                 </div>
-                <div class="other-content">
-                    <div class="row">
-                        <h5>ผลิตภัณฑ์อื่นๆ จาก Work Louder</h4>
-                            <div class="col-12" style="display: flex;justify-content: space-between;">
+            </div>
+            <div class="other-content">
+                <div class="row">
+                    <h5>ผลิตภัณฑ์อื่นๆ จาก Work Louder</h4>
+                        <div class="col-12" style="display: flex;justify-content: space-between;">
 
-                                <div class="card-container">
-                                    <div class="card-pdt">
-                                        <img src="{{ asset('image\product\FigmaCreatorMicro.png') }}"
-                                            class="card-img-top" alt="...">
-                                        <div class="card-pdt-body">
-                                            <h5 class="card-pdt-title mt-1" id="pdt-name">Figma Creator Micro</h5>
-                                            <p class="" id="pdt-type">Mechanical Keyboard</p>
-                                            <span class="text-price" id="pdt-price">5,375 บาท</span>
-                                            <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
-                                        </div>
+                            <div class="card-container">
+                                <div class="card-pdt">
+                                    <img src="{{ asset('image\product\FigmaCreatorMicro.png') }}" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-pdt-body">
+                                        <h5 class="card-pdt-title mt-1" id="pdt-name">Figma Creator Micro</h5>
+                                        <p class="" id="pdt-type">Mechanical Keyboard</p>
+                                        <span class="text-price" id="pdt-price">5,375 บาท</span>
+                                        <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
                                     </div>
-                                    <div class="card-pdt">
-                                        <img src="{{ asset('image\product\Knob1.png') }}" class="card-img-top"
-                                            alt="...">
-                                        <div class="card-pdt-body">
-                                            <h5 class="card-pdt-title mt-1" id="pdt-name">Knob1</h5>
-                                            <p class="" id="pdt-type">Mechanical Keyboard</p>
-                                            <span class="text-price" id="pdt-price">14,999 บาท</span>
-                                            <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
-                                        </div>
+                                </div>
+                                <div class="card-pdt">
+                                    <img src="{{ asset('image\product\Knob1.png') }}" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-pdt-body">
+                                        <h5 class="card-pdt-title mt-1" id="pdt-name">Knob1</h5>
+                                        <p class="" id="pdt-type">Mechanical Keyboard</p>
+                                        <span class="text-price" id="pdt-price">14,999 บาท</span>
+                                        <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
                                     </div>
-                                    <div class="card-pdt">
-                                        <img src="{{ asset('image\product\CreatorBoard.png') }}" class="card-img-top"
-                                            alt="...">
-                                        <div class="card-pdt-body">
-                                            <h5 class="card-pdt-title mt-1" id="pdt-name">Creator Board</h5>
-                                            <p class="" id="pdt-type">Mechanical Keyboard</p>
-                                            <span class="text-price" id="pdt-price">13,828 บาท</span>
-                                            <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
-                                        </div>
+                                </div>
+                                <div class="card-pdt">
+                                    <img src="{{ asset('image\product\CreatorBoard.png') }}" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-pdt-body">
+                                        <h5 class="card-pdt-title mt-1" id="pdt-name">Creator Board</h5>
+                                        <p class="" id="pdt-type">Mechanical Keyboard</p>
+                                        <span class="text-price" id="pdt-price">13,828 บาท</span>
+                                        <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
                                     </div>
-                                    <div class="card-pdt">
-                                        <img src="{{ asset('image\product\CreatorBoardXL.png') }}" class="card-img-top"
-                                            alt="...">
-                                        <div class="card-pdt-body">
-                                            <h5 class="card-pdt-title mt-1" id="pdt-name">Creator Board XL</h5>
-                                            <p class="" id="pdt-type">Mechanical Keyboard</p>
-                                            <span class="text-price" id="pdt-price">18,900 บาท</span>
-                                            <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
-                                        </div>
+                                </div>
+                                <div class="card-pdt">
+                                    <img src="{{ asset('image\product\CreatorBoardXL.png') }}" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-pdt-body">
+                                        <h5 class="card-pdt-title mt-1" id="pdt-name">Creator Board XL</h5>
+                                        <p class="" id="pdt-type">Mechanical Keyboard</p>
+                                        <span class="text-price" id="pdt-price">18,900 บาท</span>
+                                        <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
                                     </div>
-
                                 </div>
 
+                            </div>
 
-                                {{-- <div class="card mb-5 me-1" style="width: 16.875rem;height: 22rem;">
+
+                            {{-- <div class="card mb-5 me-1" style="width: 16.875rem;height: 22rem;">
                                     <img src="https://cdn.wallpapersafari.com/81/92/qs7Pof.jpg" class="card-img-top"
                                         alt="..." style="width: 100%;border-radius: 20px;padding: 16px;">
                                     <div class="card-body">
@@ -273,65 +259,95 @@
                                 </div> --}}
 
 
-                            </div>
-                            <div>
-                                <h5>ผลิตภัณฑ์ที่น่าจะถูกใจคุณ</h5>
-                            </div>
-                            <div class="col-12" style="display: flex;justify-content: space-between;">
-                                <div class="card-container">
-                                    <div class="card-pdt">
-                                        <img src="{{ asset('image\product\RAZERProTypeUltra.png') }}"
-                                            class="card-img-top" alt="...">
-                                        <div class="card-pdt-body">
-                                            <h5 class="card-pdt-title mt-1" id="pdt-name">RAZER Pro Type Ultra</h5>
-                                            <p class="" id="pdt-type">Mechanical Keyboard</p>
-                                            <span class="text-price" id="pdt-price">5,599 บาท</span>
-                                            <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
-                                        </div>
+                        </div>
+                        <div>
+                            <h5>ผลิตภัณฑ์ที่น่าจะถูกใจคุณ</h5>
+                        </div>
+                        <div class="col-12" style="display: flex;justify-content: space-between;">
+                            <div class="card-container">
+                                <div class="card-pdt">
+                                    <img src="{{ asset('image\product\RAZERProTypeUltra.png') }}" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-pdt-body">
+                                        <h5 class="card-pdt-title mt-1" id="pdt-name">RAZER Pro Type Ultra</h5>
+                                        <p class="" id="pdt-type">Mechanical Keyboard</p>
+                                        <span class="text-price" id="pdt-price">5,599 บาท</span>
+                                        <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
                                     </div>
-                                    <div class="card-pdt">
-                                        <img src="{{ asset('image\product\DiavaletPhantom2.png') }}" class="card-img-top"
-                                            alt="...">
-                                        <div class="card-pdt-body">
-                                            <h5 class="card-pdt-title mt-1" id="pdt-name">Diavalet Phantom 2</h5>
-                                            <p class="" id="pdt-type">Stereo Speaker</p>
-                                            <span class="text-price" id="pdt-price">50,642 บาท</span>
-                                            <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
-                                        </div>
-                                    </div>
-                                    <div class="card-pdt">
-                                        <img src="{{ asset('image\product\BoseQuietComfortUltra.png') }}"
-                                            class="card-img-top" alt="...">
-                                        <div class="card-pdt-body">
-                                            <div class="card-pdt-title mt-1" id="pdt-name">Bose QuietComfort Ultra</div>
-                                            <p class="" id="pdt-type">Headphone</p>
-                                            <span class="text-price" id="pdt-price">15,900 บาท</span>
-                                            <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
-                                        </div>
-                                    </div>
-                                    <div class="card-pdt">
-                                        <img src="{{ asset('image\product\LewittPureTube.png') }}" class="card-img-top"
-                                            alt="...">
-                                        <div class="card-pdt-body">
-                                            <h5 class="card-pdt-title mt-1" id="pdt-name">Lewitt Pure Tube</h5>
-                                            <p class="" id="pdt-type">Studio Microphone</p>
-                                            <span class="text-price" id="pdt-price">43,999 บาท</span>
-                                            <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
-                                        </div>
-                                    </div>
-
                                 </div>
-                            </div>
-                    </div>
+                                <div class="card-pdt">
+                                    <img src="{{ asset('image\product\DiavaletPhantom2.png') }}" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-pdt-body">
+                                        <h5 class="card-pdt-title mt-1" id="pdt-name">Diavalet Phantom 2</h5>
+                                        <p class="" id="pdt-type">Stereo Speaker</p>
+                                        <span class="text-price" id="pdt-price">50,642 บาท</span>
+                                        <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
+                                    </div>
+                                </div>
+                                <div class="card-pdt">
+                                    <img src="{{ asset('image\product\BoseQuietComfortUltra.png') }}"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-pdt-body">
+                                        <div class="card-pdt-title mt-1" id="pdt-name">Bose QuietComfort Ultra</div>
+                                        <p class="" id="pdt-type">Headphone</p>
+                                        <span class="text-price" id="pdt-price">15,900 บาท</span>
+                                        <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
+                                    </div>
+                                </div>
+                                <div class="card-pdt">
+                                    <img src="{{ asset('image\product\LewittPureTube.png') }}" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-pdt-body">
+                                        <h5 class="card-pdt-title mt-1" id="pdt-name">Lewitt Pure Tube</h5>
+                                        <p class="" id="pdt-type">Studio Microphone</p>
+                                        <span class="text-price" id="pdt-price">43,999 บาท</span>
+                                        <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
+                                    </div>
+                                </div>
 
+                            </div>
+                        </div>
                 </div>
+
             </div>
         </div>
+    </div>
 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script>
+        let images = document.querySelectorAll('.carousel img:not(.sale-banner img)');
+        let imageslide = document.querySelectorAll('.imageslide img');
+        let index = 0;
+        // imageslide[index].classList.add('active');
+        // images[index].classList.add('active');
+        imageslide.forEach((img, i) => {
+            img.addEventListener('click', () => {
+                console.log(i);
+                showSlide(i);
+            });
+        });
+
+        function showSlide(i) {
+            images[index].classList.remove('active');
+            imageslide[index].classList.remove('active');
+            index = (i + images.length) % images.length;
+            images[index].classList.add('active');
+            imageslide[index].classList.add('active');
+            // caption.textContent = captions[index];
+        }
+
+        function prevSlide() {
+            showSlide(index - 1);
+        }
+
+        function nextSlide() {
+            showSlide(index + 1);
+        }
     </script>
 @endsection
 @section('footer')

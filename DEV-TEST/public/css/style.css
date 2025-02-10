@@ -195,18 +195,35 @@ footer {
     }
 }
 
-.sale img {
-    position: absolute;
-    /* Sale */
-    width: 101px;
-    height: 44px;
-    left: 0px;
+.container-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    position: relative;
 }
 
-.carousel-item img {
+.carousel {
+    width: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel img {
+    width: 450px;
+    height: 281px;
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+
+/* .carousel-item img {
     max-height: 281px;
     object-fit: contain;
-}
+} */
 
 .controls-btn {
     position: absolute;
@@ -227,6 +244,14 @@ footer {
     color: #469B4C;
 }
 
+.controls button:first-child {
+    left: -20px;
+}
+
+.controls button:last-child {
+    right: -20px;
+}
+
 .imageslide {
     display: flex;
     justify-content: center;
@@ -238,6 +263,27 @@ footer {
     height: 46px;
     padding: 6px;
     border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.imageslide img.active {
+    border: 2px solid #4285F4;
+}
+
+.imageslide img:hover {
+    border: 2px solid #4285F4;
+}
+
+.sale-banner img {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    /* z-index: 3; */
+}
+
+.container-carousel .carousel {
+    position: relative;
 }
 
 
@@ -328,7 +374,7 @@ footer {
 }
 
 /* .card {  width: 16.875rem;
-  
+
     height: 20.375rem;
     img{
         width: 100%;
