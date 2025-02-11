@@ -3,9 +3,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    /* background: white;
-    border: 2px solid blue; */
-    /* border-radius: 10px; */
     height: 116px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -27,7 +24,6 @@
     }
 }
 
-/* Navigation Links */
 .nav-links {
     display: flex;
     list-style: none;
@@ -46,7 +42,6 @@
     transition: 0.3s;
 }
 
-/* Active Link */
 .nav-links .active {
     background-color: #4285F4;
     color: white;
@@ -99,7 +94,6 @@
 
     .navbar .nav-links.show {
         display: flex;
-        /* แสดงเมนูเมื่อกดปุ่ม */
     }
 
     .hamburger {
@@ -131,7 +125,6 @@ body {
     background-color: #4285F4;
     color: white;
     padding: 8px 16px;
-    /* border-radius: 20px; */
     border: none;
     cursor: pointer;
     transition: 0.3s;
@@ -199,7 +192,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
     position: relative;
 }
 
@@ -218,12 +210,6 @@ footer {
 .carousel img.active {
     display: block;
 }
-
-
-/* .carousel-item img {
-    max-height: 281px;
-    object-fit: contain;
-} */
 
 .controls-btn {
     position: absolute;
@@ -244,11 +230,11 @@ footer {
     color: #469B4C;
 }
 
-.controls button:first-child {
+.controls-btn button:first-child {
     left: -20px;
 }
 
-.controls button:last-child {
+.controls-btn button:last-child {
     right: -20px;
 }
 
@@ -275,15 +261,38 @@ footer {
     border: 2px solid #4285F4;
 }
 
-.sale-banner img {
+.sale {
     position: absolute;
-    width: 80px;
-    height: auto;
-    /* z-index: 3; */
+    padding: 10px;
 }
 
-.container-carousel .carousel {
-    position: relative;
+.sale span {
+    font-size: 16px;
+    display: flex;
+    width: 101px;
+    height: 44px;
+    background-color: #EDFF00;
+    border-radius: 1.3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .carousel img {
+        width: 340px;
+        height: 225px;
+        display: none;
+    }
+
+    .imageslide img {
+        width: 54px;
+        height: 36px;
+        padding: 6px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
 }
 
 
@@ -301,9 +310,6 @@ footer {
     }
 }
 
-
-
-/* Container to enable horizontal scrolling */
 .card-container {
     display: flex;
     overflow-x: auto;
@@ -313,14 +319,11 @@ footer {
     white-space: nowrap;
 }
 
-/* Optional: Hide scrollbar */
 .card-container::-webkit-scrollbar {
     display: none;
 }
 
-/* Individual cards */
 .card-pdt {
-    /* flex: 0 0 250px; */
     height: 326px;
     width: 270px;
     align-items: center;
@@ -344,19 +347,10 @@ footer {
             font-size: 20px;
             font-weight: bold;
             color: #333;
-            /* margin-top: 10px;
-            margin-bottom: 10px; */
             white-space: nowrap;
-            /* ป้องกันไม่ให้ข้อความพับบรรทัด */
             overflow: hidden;
-            /* ซ่อนข้อความที่เกินกรอบ */
             text-overflow: ellipsis;
-            /* แสดง ... เมื่อข้อความยาวเกิน */
-
-
         }
-
-
 
         p {
             font-size: 14px;
@@ -365,20 +359,8 @@ footer {
     }
 }
 
-
 .text-price {
     color: #4285F4;
-    /* font-weight: bold; */
     font-weight: 600;
     font-size: 24px;
 }
-
-/* .card {  width: 16.875rem;
-
-    height: 20.375rem;
-    img{
-        width: 100%;
-        border-radius: 20px;
-        padding:  1rem;
-    }
-} */
