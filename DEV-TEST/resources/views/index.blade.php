@@ -131,15 +131,13 @@
                         <span>ข้อมูล ณ วันที่ 1 พ.ย. 67 ดู 45,959</span>
                     </div>
                 </div>
-                {{-- เส้นใต้ --}}
+          
                 <hr>
                 <div class="content">
                     <div class="row">
                         <div class="col-lg-6 col-sm-12">
                             <div class="container-carousel">
-                                {{-- <div class="sale-banner">
-                                    <img src="{{ asset('image\product\sale.png') }}" alt="" class="sale-banner">
-                                </div> --}}
+                          
                                 <div id="productCarousel" class="carousel" data-bs-ride="carousel">
                                     <div class="sale">
                                         <span >SALE!</span>
@@ -175,7 +173,6 @@
                         <div class="col-lg-6 col-sm-12">
                             <b> Nomad [E] </b>
                             <p>
-
                                 Know Productivity - Efficiency - Passion - Creativity with no limits. A crisp IPS display
                                 boasts everything from pomodoro timer, to a playful Tamagotchi-style companion, a trusty
                                 clock and much more.
@@ -247,22 +244,7 @@
                                         <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
                                     </div>
                                 </div>
-
                             </div>
-
-
-                            {{-- <div class="card mb-5 me-1" style="width: 16.875rem;height: 22rem;">
-                                    <img src="https://cdn.wallpapersafari.com/81/92/qs7Pof.jpg" class="card-img-top"
-                                        alt="..." style="width: 100%;border-radius: 20px;padding: 16px;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Figma Creator Micro</h5>
-                                        <p class="">Mechanical Keyboard</p>
-                                        <span class="text-price">5,375 บาท</span>
-                                        <a href="#" class="btn btn-primary d-grid ">ใส่ตะกร้า</a>
-                                    </div>
-                                </div> --}}
-
-
                         </div>
                         <div>
                             <h5>ผลิตภัณฑ์ที่น่าจะถูกใจคุณ</h5>
@@ -327,8 +309,6 @@
         let images = document.querySelectorAll('.carousel img:not(.sale-banner img)');
         let imageslide = document.querySelectorAll('.imageslide img');
         let index = 0;
-        // imageslide[index].classList.add('active');
-        // images[index].classList.add('active');
         imageslide.forEach((img, i) => {
             img.addEventListener('click', () => {
                 console.log(i);
@@ -342,7 +322,6 @@
             index = (i + images.length) % images.length;
             images[index].classList.add('active');
             imageslide[index].classList.add('active');
-            // caption.textContent = captions[index];
         }
 
         function prevSlide() {
